@@ -12,7 +12,7 @@
 </head>
 <body class="bodyRegistrarse">
     <header class="headerRegistrarse">
-        <a class="Logo" href="../index.html">
+        <a class="Logo" href="../paginaPrincipal.html">
             <i class="fas fa-film" aria-hidden="true"></i>
             <span>CAC-Movies</span>
         </a>
@@ -20,23 +20,18 @@
     </header>
     <main  id="main" class="main">
       <section  data-aos="zoom-in"  data-aos-duration="1000" class="seccionRegistrarse">
-        <form  action="" method="post">
+        <form action="javascript:void(0);" method="post">
             <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
-         
             <div>
                 <input type="email" placeholder="Email" required id="email" name="email">
             </div>
             <div>
                 <input type="password" placeholder="Contraseña" required id="password" name="password">
             </div>
-          
-          
             <div>
-                <input  class="boton" type="submit" value="Iniciar Sesión">
+                <button type="button" class="boton" onclick="loginUser()">Iniciar Sesión</button>
             </div>
-           
-            <div > 
-               
+            <div>
                 <a id="ayuda" class="ayuda" href="registrarse.html">Registrarse</a>
             </div>
         </form>
@@ -47,5 +42,7 @@
     <script>
     AOS.init();
     </script>
+ 
+<script src="script.js"></script>
 </body>
 </html>
