@@ -304,6 +304,7 @@ body{
             }
           
         }
+        
        .boton{
             border: 1px solid white;
             box-sizing: content-box;
@@ -410,7 +411,7 @@ body{
             .tituloSection{
                 font-size: 2rem;
             }
-            .peliculas{
+            .contenedor{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -818,3 +819,52 @@ hr{
     margin: 0 auto;
     margin-top: 40px;
 }
+
+
+
+/* Sección de Películas Populares */
+.peliculasTendencia {
+    padding: 40px 20px;
+  }
+  
+  .titular {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .contenedor > div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .d-flex.justify-content-center {
+    flex-wrap: wrap;
+  }
+  
+  .btn-primary {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+  
+  /* Media Queries para adaptarse a diferentes tamaños de pantalla */
+  @media (max-width: 767px) {
+    .titular {
+      font-size: 2rem;
+    }
+  
+    .contenedor {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .contenedor {
+      grid-template-columns: 1fr;
+    }
+  }
